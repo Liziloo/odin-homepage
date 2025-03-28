@@ -1,3 +1,2 @@
-import { greeting } from "./greeting.js";
-
-console.log(greeting);
+import "./styles/comeau-reset.css";
+import "./styles/styles.css";
