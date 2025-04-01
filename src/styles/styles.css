@@ -1,4 +1,146 @@
+@font-face {
+    font-family: 'arvobold';
+    src: url('../assets/fonts/arvo-bold-webfont.woff') format('woff2'),
+         url('../assets/fonts/arvo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'arvobold_italic';
+    src: url('../assets/fonts/arvo-bolditalic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/arvo-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'arvoitalic';
+    src: url('../assets/fonts/arvo-italic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/arvo-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'arvoregular';
+    src: url('../assets/fonts/arvo-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/arvo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'candelabold';
+    src: url('../assets/fonts/candelabold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/candelabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'candelabold_italic';
+    src: url('../assets/fonts/candelabolditalic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/candelabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'candelabook';
+    src: url('../assets/fonts/candelabook-webfont.woff2') format('woff2'),
+         url('../assets/fonts/candelabook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'candelabook_italic';
+    src: url('../assets/fonts/candelaitalic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/candelaitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+    font-family: 'candelabo', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'arvobold', serif;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .icon {
     width: 4vw;
     height: auto;
+}
+
+.bio {
+    height: 100vh;
+}
+
+.portrait {
+    background-color: #0e3007;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project {
+    height: 40vh;
+    width: 90%;
+    border: 1px solid grey;
+}
+
+.portrait > img {
+    width: 85%;
+    height: auto;
+    margin-top: 3vh;
+}
+
+.name {
+    position: relative;
+    top: -2.5rem;
+    left: -25%;
+    color: white;
+}
+
+.work {
+    gap: 5vh;
 }
