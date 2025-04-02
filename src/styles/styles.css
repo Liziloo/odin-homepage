@@ -4,11 +4,7 @@
          url('../assets/fonts/arvo-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'arvobold_italic';
@@ -16,11 +12,7 @@
          url('../assets/fonts/arvo-bolditalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'arvoitalic';
@@ -28,11 +20,7 @@
          url('../assets/fonts/arvo-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'arvoregular';
@@ -40,11 +28,7 @@
          url('../assets/fonts/arvo-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'candelabold';
@@ -52,11 +36,7 @@
          url('../assets/fonts/candelabold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'candelabold_italic';
@@ -64,11 +44,7 @@
          url('../assets/fonts/candelabolditalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'candelabook';
@@ -76,11 +52,7 @@
          url('../assets/fonts/candelabook-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'candelabook_italic';
@@ -88,7 +60,6 @@
          url('../assets/fonts/candelaitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 :root {
@@ -99,46 +70,74 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'arvobold', serif;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
 section {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    margin-bottom: 4vh;
 }
 
 .icon {
-    width: 4vw;
+    width: 12vw;
     height: auto;
-}
-
-.bio {
-    height: 100vh;
 }
 
 .portrait {
-    background-color: #0e3007;
+    width: 100vw;
+    background: linear-gradient(135deg, #0e3007, #0e3007 55%, white 55%, white);
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.project {
-    height: 40vh;
-    width: 90%;
-    border: 1px solid grey;
+    padding-top: 1vh;
 }
 
 .portrait > img {
-    width: 85%;
+    width: 80%;
     height: auto;
     margin-top: 3vh;
+    box-shadow: 3px 3px 5px 1px black;
+    align-self: center;
 }
 
 .name {
     position: relative;
-    top: -2.5rem;
-    left: -25%;
+    top: -5.5rem;
+    left: 12%;
     color: white;
+    line-height: 2.5rem;
+}
+
+.about {
+    position: relative;
+    top: -5vh;
+}
+
+.about > h2 {
+    text-align: center;
+}
+
+.about > p {
+    font-size: 1.3rem;
+}
+
+.social-icons {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.project {
+    border: 1px solid grey;
 }
 
 .work {
