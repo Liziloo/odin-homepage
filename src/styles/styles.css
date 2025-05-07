@@ -63,11 +63,11 @@
 }
 
 :root {
-    font-family: 'candelabo', sans-serif;
+    font-family: 'candelabook', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'arvobold', serif;
+    font-family: 'arvoregular', serif;
 }
 
 h1 {
@@ -76,6 +76,10 @@ h1 {
 
 h2 {
     font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.2rem;
 }
 
 section {
@@ -89,13 +93,13 @@ section {
 }
 
 .icon {
-    width: 12vw;
-    height: auto;
+    width: auto;
+    height: 2.5rem;
 }
 
 .portrait {
     width: 100vw;
-    background: linear-gradient(135deg, #0e3007, #0e3007 55%, white 55%, white);
+    background: linear-gradient(135deg, #0e3007, #0e3007 50%, rgb(207, 205, 205) 50%, white 51.25%, white);
     display: flex;
     flex-direction: column;
     padding-top: 1vh;
@@ -137,7 +141,17 @@ section {
 }
 
 .project {
-    border: 1px solid grey;
+    box-shadow: 1px 1px 10px 2px #c9c7c7;
+    padding: 20px;
+}
+
+.project-links > .icon {
+    height: 1.2rem;
+    width: auto;
+}
+
+.project-links, .project-footer {
+    display: flex;
 }
 
 .work {
