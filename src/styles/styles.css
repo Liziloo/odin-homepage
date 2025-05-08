@@ -141,8 +141,12 @@ section {
 }
 
 .project {
-    box-shadow: 1px 1px 10px 2px #c9c7c7;
+    box-shadow: 1px 5px 10px 2px #c9c7c7;
     padding: 20px;
+}
+
+.project-screenshot {
+    margin-bottom: 20px;
 }
 
 .project-links > .icon {
@@ -154,6 +158,33 @@ section {
     display: flex;
 }
 
+.project-footer {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 5px 5px 0;
+}
+
+.body-text {
+    padding: 5px 0 20px 0;
+}
+
 .work {
     gap: 5vh;
+}
+
+.contact {
+    background-color: #0e3007bd;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    margin-bottom: 0;
+}
+
+.contact-info {
+    width: 100%;
+}
+
+.personal-photo {
+    padding: 0;
+    margin: 0;
 }
