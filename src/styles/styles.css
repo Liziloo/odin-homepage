@@ -71,24 +71,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
 }
 
 h3 {
     font-size: 1.2rem;
 }
 
+
 section {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 7vw;
-    padding-right: 7vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     margin-bottom: 15vh;
 }
 
@@ -97,33 +97,16 @@ section {
     height: 2.5rem;
 }
 
-.portrait {
+.bio {
     width: 100vw;
-    background: linear-gradient(135deg, #0e3007, #0e3007 50%, rgb(207, 205, 205) 50%, white 51.25%, white);
-    display: flex;
-    flex-direction: column;
-    padding-top: 1vh;
 }
 
-.portrait > img {
-    width: 80%;
-    height: auto;
-    margin-top: 3vh;
+.bio > img {
     box-shadow: 3px 3px 5px 1px black;
-    align-self: center;
 }
 
 .name {
-    position: relative;
-    top: -5.5rem;
-    left: 12%;
     color: white;
-    line-height: 2.5rem;
-}
-
-.about {
-    position: relative;
-    top: -5vh;
 }
 
 .about > h2 {
@@ -187,4 +170,80 @@ section {
 .personal-photo {
     padding: 0;
     margin: 0;
+}
+
+
+/* mobile phone */
+
+@media (max-width: 768px) {
+
+    .bio {
+        align-items: center;
+        background: linear-gradient(150deg, #0e3007, #0e3007 42%, rgb(207, 205, 205) 42%, white 43.25%, white);
+        padding-top: 1vh;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box > img {
+        width: 90%;
+        height: auto;
+        margin-top: 3vh;
+    }
+
+    .name {
+        position: relative;
+        top: -7rem;
+        left: 2rem;
+        line-height: 3.5rem;
+    }
+
+    .about {
+        width: 100%;
+        position: relative;
+        top: -10vh;
+    }
+}
+
+/* tablet */
+
+@media only screen and (min-width: 768px) {
+
+    .bio {
+        background: linear-gradient(170deg, #0e3007, #0e3007 65%, rgb(207, 205, 205) 65%, white 66.25%, white);
+        position: relative;
+        height: 100vh;
+        z-index: -1;
+    }
+
+    .box > img {
+        position: relative;
+        top: 7vh;
+        left: -7vw;
+        width: 45vw;
+        height: 50vw;
+        object-fit: cover;
+    }
+
+    .name {
+        position: relative;
+        z-index: 1;
+        top: -63vh;
+        left: 33vw;
+    }
+
+    .about {
+        width: 77vw;
+        padding: 10px;
+        box-shadow: 3px 3px 5px 1px rgb(206, 204, 204);
+        background-color: white;
+    }
+
+    .social-icons {
+        display: none;
+    }
 }
