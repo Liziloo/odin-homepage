@@ -75,7 +75,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
 }
 
 h3 {
@@ -114,7 +114,7 @@ section {
 }
 
 .about > p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .social-icons {
@@ -180,7 +180,7 @@ section {
     .bio {
         align-items: center;
         background: linear-gradient(150deg, #0e3007, #0e3007 42%, rgb(207, 205, 205) 42%, white 43.25%, white);
-        padding-top: 1vh;
+        padding: 3vh;
     }
 
     .box {
@@ -214,33 +214,44 @@ section {
 @media only screen and (min-width: 768px) {
 
     .bio {
-        background: linear-gradient(170deg, #0e3007, #0e3007 65%, rgb(207, 205, 205) 65%, white 66.25%, white);
+        display: block;
+        background: linear-gradient(170deg, #0e3007, #0e3007 40%, rgb(207, 205, 205) 40%, white 66.25%, white);
         position: relative;
         height: 100vh;
         z-index: -1;
+        align-items: start;
+        justify-content: start;
+        padding-top: 7vh;
     }
 
-    .box > img {
+    .bio > * {
+        display: block;
         position: relative;
-        top: 7vh;
-        left: -7vw;
+    }
+
+    .bio > img {
         width: 45vw;
         height: 50vw;
         object-fit: cover;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .about {
+        background-color: white;
+        height: 90vh;
+        width: 75vw;
+        z-index: -1;
+        box-shadow: 3px 3px 5px 1px #0e300738;
+        margin: auto;
+        padding: 50px 35px;
     }
 
     .name {
         position: relative;
+        margin: 10px 0;
+        left: -7vw;
         z-index: 1;
-        top: -63vh;
-        left: 33vw;
-    }
-
-    .about {
-        width: 77vw;
-        padding: 10px;
-        box-shadow: 3px 3px 5px 1px rgb(206, 204, 204);
-        background-color: white;
     }
 
     .social-icons {
