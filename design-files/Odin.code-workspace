@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"workbench.externalBrowser": "chrome",
+		"liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+		"liveServer.settings.CustomBrowser": "chrome"
+	}
+}
