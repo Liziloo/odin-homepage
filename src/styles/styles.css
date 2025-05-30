@@ -169,18 +169,6 @@ section {
         padding: 3vh;
     }
 
-    .box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .box > img {
-        width: 90%;
-        height: auto;
-        margin-top: 3vh;
-    }
-
     .name {
         position: relative;
         top: -7rem;
@@ -246,7 +234,7 @@ section {
 
 /* tablet */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
 
     .bio {
         display: block;
@@ -291,6 +279,124 @@ section {
 
     .bio > .social-icons {
         display: none;
+    }
+
+    .work {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-between;
+        width: 85vw;
+        margin: auto;
+        padding-bottom: 25vh;
+    }
+
+    .work > .section-header {
+        width: 100%;
+    }
+
+    .project {
+        width: 47%;
+    }
+
+    .project-screenshot {
+        height: 30vh;
+    }
+
+    .project-footer {
+        padding: 10px 20px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+        padding: 5vh 5vh 5vh 8vh;
+        justify-content: space-between;
+        height: 90vh;
+    }
+
+    .contact-details p {
+        font-size: 1.5rem;
+    }
+
+    .invite {
+        margin: 15px 0;
+    }
+
+    .address {
+        margin: 30px 0;
+    }
+
+    .contact-details > .social-icons {
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        margin-top: 2rem;
+    }
+
+    .email, .phone {
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+    }
+    
+    .icon {
+        height: 3.5rem;
+    }
+
+    .svg-icon {
+        height: 1.5rem;
+        fill: white;
+        float: left;
+    }
+
+    .personal-photo > img {
+        height: 74vh;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .bio {
+        background: linear-gradient(170deg, #0e3007, #0e3007 68%, rgba(207, 205, 205, 0.836) 66%, white 66.5%, white);
+        z-index: -1;
+        flex-direction: row;
+        height: 35vw;
+        align-items: start;
+    }
+
+    .bio > * {
+        position: absolute;
+    }
+
+    .bio > img {
+        height: 32vw;
+        width: 29vw;
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    .name {
+        font-size: 3rem;
+        width: 29vw;
+        z-index: 2;
+    }
+
+    .about {
+        background-color: white;
+        box-shadow: 3px 3px 5px 1px #0e300738;
+        padding: 2.5vh 5vw 10rem;
+    }
+
+    .about > h2 {
+        font-size: 2rem;
+    }
+
+    .bio > .social-icons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
     }
 
     .work {
