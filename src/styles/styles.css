@@ -360,40 +360,53 @@ section {
 @media only screen and (min-width: 1280px) {
     .bio {
         background: linear-gradient(170deg, #0e3007, #0e3007 68%, rgba(207, 205, 205, 0.836) 66%, white 66.5%, white);
-        z-index: -1;
         flex-direction: row;
-        height: 35vw;
+        height: 38vw;
         align-items: start;
+        padding: 3vw 4vw;
     }
 
     .bio > * {
         position: absolute;
     }
 
+    .bio > img, .name {
+        width: 28vw;
+    }
+
     .bio > img {
         height: 32vw;
-        width: 29vw;
         object-fit: cover;
         z-index: 1;
     }
 
     .name {
+        top: calc(35vw - 4rem);
         font-size: 3rem;
-        width: 29vw;
         z-index: 2;
+        text-align: center;
     }
 
     .about {
         background-color: white;
         box-shadow: 3px 3px 5px 1px #0e300738;
-        padding: 2.5vh 5vw 10rem;
+        width: 65vw;
+        top: 5.5vw;
+        left: 32vw;
+        height: 27vw;
+        padding: 0 30px 5.5rem 25px;
     }
 
     .about > h2 {
         font-size: 2rem;
+        margin-top: 1rem;
+        text-align: left;
+        padding: 1rem 0;
     }
 
     .bio > .social-icons {
+        right:  calc(3vw + 25px);
+        top: calc(32.5vw - 5rem);
         display: flex;
         justify-content: flex-end;
         gap: 20px;
@@ -405,9 +418,6 @@ section {
         flex-wrap: wrap;
         align-items: stretch;
         justify-content: space-between;
-        width: 85vw;
-        margin: auto;
-        padding-bottom: 25vh;
     }
 
     .work > .section-header {
@@ -415,7 +425,7 @@ section {
     }
 
     .project {
-        width: 47%;
+        width: 30%;
     }
 
     .project-screenshot {
@@ -430,9 +440,10 @@ section {
         display: flex;
         flex-direction: row;
         margin-bottom: 0;
-        padding: 5vh 5vh 5vh 8vh;
+        padding: 5vw 5vw 5vw 5vw;
         justify-content: space-between;
-        height: 90vh;
+        align-items: flex-start;
+        height: 45vw;
     }
 
     .contact-details p {
@@ -471,6 +482,8 @@ section {
     }
 
     .personal-photo > img {
-        height: 74vh;
+        height: 36vw;
+        width: 52vw;
+        object-fit: cover;
     }
 }
